@@ -1,17 +1,32 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { RouterProvider } from "react-router";
-import Button from "../shared/ui/button";
+import { Outlet, RouterProvider } from "react-router";
+import AuthPage from "./auth";
+import { Signup } from "@widgets/singup-form";
+import { Login } from "@widgets/login-form";
+import { SideBar } from "@widgets/sidebar";
+import { MainLayout } from "@pages/layouts";
 
 const Router = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
-        <>
-          <Button>Кнопка</Button>
-        </>
+        <MainLayout>
+          <SideBar />
+          <Outlet />
+        </MainLayout>
       ),
+      children: [
+        {
+          path: "auth",
+          element: <AuthPage />,
+          children: [
+            { path: "login", element: <Login /> },
+            { path: "signup", element: <Signup /> },
+          ],
+        },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;

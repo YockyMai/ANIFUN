@@ -1,4 +1,22 @@
 :root {
-  --color-dark: #242424;
-  --color-primary: #bd50cc;
+  //colors
+  --bg-app-color: #0c1117;
+  --color-dark: #131c25;
+  --color-primary: #5179ff;
+  --color-dimmed: #2d3446;
+  --color-danger: #d02626;
+
+  //radius
+  --radius-sm: 0.3em;
+  --radius-md: 0.5em;
+  --radius-lg: 0.8em;
+  --radius-xl: 1em;
+
+  //padding
+  --padding-sm: 5px;
+  --padding-md: 10px;
+  --padding-lg: 15px;
+  --padding-xl: 20px;
+
+  --transition-delay: 0.15s;
 }

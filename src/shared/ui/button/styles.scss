@@ -1,0 +1,21 @@
+.button {
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: var(--transition-delay);
+  opacity: 0.95;
+
+  &:hover {
+    opacity: 1;
+  }
+  &:active {
+    transform: translateY(5%);
+  }
+
+  &-color-danger {
+    background-color: var(--color-danger);
+  }
+}
