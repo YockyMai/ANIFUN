@@ -1,15 +1,11 @@
 import React from "react";
-import "./styles.scss";
 import { Outlet } from "react-router";
-import AuthVideo from "@pages/auth/ui/auth-video";
+import "./styles.scss";
 
 const AuthPage = () => {
   return (
-    <div className={"auth-page"}>
-      <div className={"auth-page-form"}>
-        <Outlet />
-      </div>
-      <AuthVideo />
+    <div className={"auth"}>
+      <Outlet />
     </div>
   );
 };

@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import { Input } from "@shared/ui";
+import React from "react";
+import "./styles.scss";
+import { Link } from "react-router-dom";
+import SignupForm from "@features/signup/ui";
 
 export const Signup = () => {
-  const [value, setValue] = useState("");
-
   return (
-    <div>
+    <div className={"auth-form"}>
       <h1>ANI FUN - регистарция</h1>
-      <Input
-        value={value}
-        onChange={(e) => {
-          setValue(e.currentTarget.value);
-        }}
-        placeholder={"Имя"}
-      />
+      <SignupForm />
+      <p>
+        Уже есть аккаунт? <Link to={"/login"}>Войти</Link>
+      </p>
     </div>
   );
 };
