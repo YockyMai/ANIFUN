@@ -1,0 +1,21 @@
+.auth-form {
+  &__emoji {
+    left: 50%;
+    top: -30px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+
+.step-button-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    flex-shrink: 100;
+  }
+}

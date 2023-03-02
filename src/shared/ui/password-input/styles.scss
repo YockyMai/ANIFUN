@@ -1,0 +1,25 @@
+.input {
+  position: relative;
+  cursor: text;
+  height: 30px;
+  &__label {
+    padding-left: 10px;
+    color: #fff;
+  }
+  &__icon {
+    position: absolute;
+    left: 10px;
+    bottom: 22px;
+  }
+  &__field {
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    background: var(--color-dark);
+    border-radius: var(--radius-md);
+  }
+}
